@@ -1,0 +1,10 @@
+
+/* Prevents iPhone from resizing in landscape mode */
+html {-webkit-text-size-adjust: none;}
+
+/* Apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+@media only screen and (min-width: 0px) {
+
+}
