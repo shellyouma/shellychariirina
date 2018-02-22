@@ -1,10 +1,48 @@
 
-/* Prevents iPhone from resizing in landscape mode */
-html {-webkit-text-size-adjust: none;}
+@media only screen {
+	
+	.requirements {
+		background: $color-3;
+		clear: both;
+		display: block;
+		float: center;
+		padding: 1em;
+		margin: 1em 0 1em 0;
+		
+	}
+	.requirements h3, .requirements p {
+				margin: 0 1.5em 0 1.5em;
+	}
+	
+	.requirements p:last-child {
+		text-align:center;
+		margin-top: 1em;
+		font-size: 1.5em;
+	}
+	
+	.sidebar {
+		background: $color-3;
+		clear: both;
+		display: block;
+		float: center;
+		padding: 1em;
+		margin: 1em 0 1em 0;
+	}
+	li {
+		text-align:center;
+	}
+	aside h3{
+		text-align:center;
+		margin-left: 35px;
+	
+	}
 
-/* Apply a natural box layout model to all elements */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+	footer {
+		background: $color-3;
+		display: block;
+		text-align:center;
+		padding: 1em;
+		margin: 1em 0 1em 0;
 
-@media only screen and (min-width: 0px) {
-
+	}
 }
