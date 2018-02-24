@@ -1,0 +1,61 @@
+@media (min-width: 768px) {
+
+
+.requirements h3 {
+  text-align: center;
+}
+.requirements p {
+  margin-top: 0;
+  max-width:330px;
+
+}
+.requirements p:nth-child(3) {
+  clear: left;
+  margin-right: 5%;
+  
+}
+.requirements p:nth-child(4) {
+clear:left;
+float: right;
+margin-top: -500px;
+}
+
+.requirements p:nth-child(5) {
+  float: right;
+  margin-top: -300px;
+  
+}
+
+.requirements p:last-child {
+		text-align:center;
+		margin-top: 1em;
+		font-size: 1.5em;
+		max-width: 100%;
+		clear:both;
+	}
+
+
+.wrapper {
+	display:block;
+	width: 75%;
+    margin: 0 auto;
+}
+
+.design-selection{
+	float:center;
+	clear: both;
+}
+.design-selection li {
+	display: inline;
+	margin: 2em;
+}
+
+.design-archives {
+	float:right;
+}
+.zen-resources {
+	float:left;
+}
+
+}
+
