@@ -1,60 +1,263 @@
-/*
-Error: File to import not found or unreadable: style-guide.scss.
-        on line 5 of styles/style.scss
+/* Import the different style sheets here */
+@import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
+@import url(reset.css);
+@media only screen {
+  .requirements {
+    background: #275dad;
+    clear: both;
+    display: block;
+    float: center;
+    padding: 1em;
+    margin: 1em 0 1em 0; }
 
-1: 
-2: /* Import the different style sheets here *\/
-3: @import "reset.css";
-4: @import "mobile.scss";
-5: @import "style-guide.scss";
-6: // @import "desktop.scss";
-7: @import "second-block.scss";
+  .requirements h3, .requirements p {
+    margin: 0 1.5em 0 1.5em; }
 
-Backtrace:
-styles/style.scss:5
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/import_node.rb:45:in `import'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:294:in `watch'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/plugin.rb:109:in `method_missing'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/exec/base.rb:52:in `parse'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/lib/sass/exec/base.rb:19:in `parse!'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/gems/sass-3.5.5/bin/sass:13:in `<top (required)>'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/bin/sass:22:in `load'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/bin/sass:22:in `<main>'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/bin/ruby_executable_hooks:15:in `eval'
-/Users/irinaohara/.rvm/gems/ruby-2.3.3/bin/ruby_executable_hooks:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: style-guide.scss.\A         on line 5 of styles/style.scss\A \A 1: \A 2: /* Import the different style sheets here */\A 3: @import \"reset.css\";\A 4: @import \"mobile.scss\";\A 5: @import \"style-guide.scss\";\A 6: // @import \"desktop.scss\";\A 7: @import \"second-block.scss\";"; }
+  .requirements p:last-child {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.5em; }
+
+  .sidebar {
+    background: #275dad;
+    clear: both;
+    display: block;
+    float: center;
+    padding: 1em;
+    margin: 1em 0 1em 0; }
+
+  li {
+    text-align: center; }
+
+  aside h3 {
+    text-align: center;
+    margin-left: 35px; }
+
+  footer {
+    background: #275dad;
+    display: block;
+    text-align: center;
+    padding: 1em;
+    margin: 1em 0 1em 0; } }
+@media (min-width: 768px) {
+  .requirements h3 {
+    text-align: center; }
+
+  .requirements p {
+    margin-top: 0;
+    max-width: 40%; }
+
+  .requirements p:nth-child(3) {
+    clear: left;
+    margin-right: 5%; }
+
+  .requirements p:nth-child(4) {
+    clear: left;
+    float: right;
+    margin-top: -192px; }
+
+  .requirements p:nth-child(5) {
+    float: right;
+    margin-top: -111px; }
+
+  .requirements p:last-child {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.5em;
+    max-width: 100%;
+    clear: both; }
+
+  .wrapper {
+    display: block;
+    width: 75%;
+    margin: 0 auto; }
+
+  .design-selection {
+    float: center;
+    clear: both; }
+
+  .design-selection ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+
+  .design-selection li {
+    display: inline;
+    margin: 2em; }
+
+  .design-archives {
+    float: right; }
+
+  .zen-resources {
+    float: left; } }
+/*First block Zen Garden Layout */
+header {
+  text-align: center;
+  width: 100%;
+  max-width: 1040px;
+  position: relative;
+  margin: 0 auto;
+  display: block; }
+
+header h1 {
+  display: inline-block;
+  min-height: 70px;
+  margin: 60px auto 0; }
+
+header h2 {
+  display: block;
+  text-align: right;
+  max-width: 700px;
+  text-align: right; }
+
+.summary p {
+  clear: right;
+  float: right;
+  margin: 0;
+  width: 250px;
+  display: block; }
+
+.intro {
+  float: left;
+  height: 600px;
+  width: 100%; }
+
+.summary {
+  position: relative;
+  max-width: 1040px;
+  margin: 80px auto 0;
+  width: 100%; }
+
+.preamble {
+  clear: left;
+  float: left;
+  left: 50%;
+  margin-left: -500px;
+  max-width: 500px;
+  position: relative;
+  top: 300px;
+  width: 50%; }
+
+.supporting {
+  float: left;
+  position: relative;
+  width: 100%; }
+
+.explanation {
+  float: left;
+  margin-left: 1.5%;
+  max-width: 500px;
+  padding-bottom: 20px;
+  position: relative;
+  left: 50%; }
+
+@media (max-width: 650px) {
+  .preamble {
+    margin-left: 0;
+    max-width: 500px;
+    top: 50px;
+    left: 0;
+    width: 90%; }
+
+  .explanation {
+    left: 0; } }
+.participation, .participation::after {
+  display: inline-block;
+  width: 40%;
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid red;
+  float: left;
+  clear: both; }
+
+.participation {
+  position: relative; }
+
+.participation::after {
+  position: absolute;
+  top: -15px;
+  right: -120%;
+  content: "image";
+  border: 3px solid yellow;
+  width: 100%;
+  height: 95%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* benefits */
+.benefits, .benefits::before {
+  width: 42%;
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid red;
+  float: left;
+  clear: both; }
+
+.benefits {
+  position: relative;
+  margin-left: 48%; }
+
+.benefits::before {
+  position: absolute;
+  top: -15px;
+  right: 108%;
+  content: "image";
+  border: 3px solid yellow;
+  width: 93%;
+  height: 90%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+@media (max-width: 700px) and (min-width: 481px) {
+  .participation, .participation::after {
+    width: 90%; }
+
+  .participation {
+    margin-bottom: 250px; }
+
+  .participation::after {
+    top: 100%;
+    right: 1%; }
+
+  .benefits, .benefits::before {
+    width: 80%; }
+
+  .benefits::before {
+    top: 100%;
+    right: -2%;
+    width: 95%; }
+
+  .benefits {
+    margin-top: 30%;
+    margin-bottom: 50%;
+    margin-left: 0; } }
+@media (max-width: 480px) {
+  .participation, .participation::after {
+    width: 90%; }
+
+  .participation {
+    margin-bottom: 80%;
+    margin-top: 270px;
+    margin-left: 0; }
+
+  .participation::after {
+    top: 100%;
+    right: 1%; }
+
+  .benefits, .benefits::before {
+    width: 90%; }
+
+  .benefits::before {
+    top: 100%;
+    right: 1%; }
+
+  .benefits {
+    margin-top: 30%;
+    margin-bottom: 70%;
+    margin-left: 3%; } }
+
+/*# sourceMappingURL=style.css.map */

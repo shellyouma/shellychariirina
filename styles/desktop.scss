@@ -6,24 +6,23 @@
 }
 .requirements p {
   margin-top: 0;
-  max-width:330px;
-
+  max-width: 40%;
 }
 .requirements p:nth-child(3) {
   clear: left;
   margin-right: 5%;
-  
+
 }
 .requirements p:nth-child(4) {
 clear:left;
 float: right;
-margin-top: -500px;
+margin-top: -192px;
 }
 
 .requirements p:nth-child(5) {
   float: right;
-  margin-top: -300px;
-  
+      margin-top: -111px;
+
 }
 
 .requirements p:last-child {
@@ -45,6 +44,11 @@ margin-top: -500px;
 	float:center;
 	clear: both;
 }
+.design-selection ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .design-selection li {
 	display: inline;
 	margin: 2em;
@@ -58,4 +62,3 @@ margin-top: -500px;
 }
 
 }
-

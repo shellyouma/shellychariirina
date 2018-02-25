@@ -5,18 +5,18 @@ header {
     width: 100%;
     max-width: 1040px;
     position: relative;
-    margin: 0 auto; 
-    display: block; 
+    margin: 0 auto;
+    display: block;
 }
 
 header h1 {
-    display: inline-block; 
+    display: inline-block;
     min-height: 70px;
-    margin: 60px auto 0; 
+    margin: 60px auto 0;
 }
 
 header h2 {
-    display: block; 
+    display: block;
     text-align: right;
     max-width: 700px;
     text-align: right;
@@ -31,12 +31,12 @@ header h2 {
 }
 
 .intro {
-    float: left; 
-    height: 600px; 
-    width: 100%; 
+    float: left;
+    height: 600px;
+    width: 100%;
 }
 
-  
+
 .summary {
     position: relative;
     max-width: 1040px;
@@ -69,5 +69,15 @@ header h2 {
     position: relative;
     left: 50%;
 }
-
-
+@media (max-width:650px) {
+  .preamble {
+    margin-left: 0;
+    max-width: 500px;
+    top: 50px;
+    left:0;
+    width: 90%;
+  }
+  .explanation{
+    left:0;
+  }
+}
