@@ -1,95 +1,6 @@
 /* Import the different style sheets here */
 @import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
 @import url(reset.css);
-@media only screen {
-  .requirements {
-    background: #275dad;
-    clear: both;
-    display: block;
-    float: center;
-    padding: 1em;
-    margin: 1em 0 1em 0; }
-
-  .requirements h3, .requirements p {
-    margin: 0 1.5em 0 1.5em; }
-
-  .requirements p:last-child {
-    text-align: center;
-    margin-top: 1em;
-    font-size: 1.5em; }
-
-  .sidebar {
-    background: #275dad;
-    clear: both;
-    display: block;
-    float: center;
-    padding: 1em;
-    margin: 1em 0 1em 0; }
-
-  li {
-    text-align: center; }
-
-  aside h3 {
-    text-align: center;
-    margin-left: 35px; }
-
-  footer {
-    background: #275dad;
-    display: block;
-    text-align: center;
-    padding: 1em;
-    margin: 1em 0 1em 0; } }
-@media (min-width: 768px) {
-  .requirements h3 {
-    text-align: center; }
-
-  .requirements p {
-    margin-top: 0;
-    max-width: 40%; }
-
-  .requirements p:nth-child(3) {
-    clear: left;
-    margin-right: 5%; }
-
-  .requirements p:nth-child(4) {
-    clear: left;
-    float: right;
-    margin-top: -192px; }
-
-  .requirements p:nth-child(5) {
-    float: right;
-    margin-top: -111px; }
-
-  .requirements p:last-child {
-    text-align: center;
-    margin-top: 1em;
-    font-size: 1.5em;
-    max-width: 100%;
-    clear: both; }
-
-  .wrapper {
-    display: block;
-    width: 75%;
-    margin: 0 auto; }
-
-  .design-selection {
-    float: center;
-    clear: both; }
-
-  .design-selection ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-
-  .design-selection li {
-    display: inline;
-    margin: 2em; }
-
-  .design-archives {
-    float: right; }
-
-  .zen-resources {
-    float: left; } }
 /*First block Zen Garden Layout */
 header {
   text-align: center;
@@ -161,6 +72,7 @@ header h2 {
 
   .explanation {
     left: 0; } }
+/* Second block Zen Garden Layout */
 .participation, .participation::after {
   display: inline-block;
   width: 40%;
@@ -212,7 +124,7 @@ header h2 {
   align-items: center;
   justify-content: center; }
 
-@media (max-width: 700px) and (min-width: 481px) {
+@media (max-width: 650px) and (min-width: 481px) {
   .participation, .participation::after {
     width: 90%; }
 
@@ -259,5 +171,95 @@ header h2 {
     margin-top: 30%;
     margin-bottom: 70%;
     margin-left: 3%; } }
+/*Third block Zen Garden Layout */
+@media (min-width: 650px) {
+  .requirements h3 {
+    text-align: center; }
+
+  .requirements p {
+    margin-top: 0;
+    max-width: 40%; }
+
+  .requirements p:nth-child(3) {
+    clear: left;
+    margin-right: 5%; }
+
+  .requirements p:nth-child(4) {
+    clear: left;
+    float: right;
+    margin-top: -192px; }
+
+  .requirements p:nth-child(5) {
+    float: right;
+    margin-top: -111px; }
+
+  .requirements p:last-child {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.5em;
+    max-width: 100%;
+    clear: both; }
+
+  .wrapper {
+    display: block;
+    width: 75%;
+    margin: 0 auto; }
+
+  .design-selection {
+    float: center;
+    clear: both; }
+
+  .design-selection ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+
+  .design-selection li {
+    display: inline;
+    margin: 2em; }
+
+  .design-archives {
+    float: right; }
+
+  .zen-resources {
+    float: left; } }
+@media only screen {
+  .requirements {
+    background: #275dad;
+    clear: both;
+    display: block;
+    float: center;
+    padding: 1em;
+    margin: 1em 0 1em 0; }
+
+  .requirements h3, .requirements p {
+    margin: 0 1.5em 0 1.5em; }
+
+  .requirements p:last-child {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.5em; }
+
+  .sidebar {
+    background: #275dad;
+    clear: both;
+    display: block;
+    float: center;
+    padding: 1em;
+    margin: 1em 0 1em 0; }
+
+  li {
+    text-align: center; }
+
+  aside h3 {
+    text-align: center;
+    margin-left: 35px; }
+
+  footer {
+    background: #275dad;
+    display: block;
+    text-align: center;
+    padding: 1em;
+    margin: 1em 0 1em 0; } }
 
 /*# sourceMappingURL=style.css.map */
