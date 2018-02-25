@@ -7,8 +7,7 @@ Error: File to import not found or unreadable: style-guide.scss.
 3: @import "reset.css";
 4: @import "mobile.scss";
 5: @import "style-guide.scss";
-6: // @import "desktop.scss";
-7: @import "second-block.scss";
+6: @import "stle.scss";
 
 Backtrace:
 styles/style.scss:5
