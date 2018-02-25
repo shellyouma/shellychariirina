@@ -6,6 +6,7 @@ header {
     max-width: 1040px;
     position: relative;
     margin: 0 auto; 
+    display: block; 
 }
 
 header h1 {
@@ -26,6 +27,7 @@ header h2 {
     float: right;
     margin: 0;
     width: 250px;
+    display: block;
 }
 
 .intro {
@@ -34,10 +36,7 @@ header h2 {
     width: 100%; 
 }
 
-div, aside, header, section {
-        display: block; 
-    }
-    
+  
 .summary {
     position: relative;
     max-width: 1040px;
@@ -71,7 +70,4 @@ div, aside, header, section {
     left: 50%;
 }
 
-p {
-    display: block;
-}
 
