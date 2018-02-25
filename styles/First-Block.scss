@@ -17,9 +17,16 @@ header h1 {
 header h2 {
     display: block; 
     text-align: right;
-    max-width: 700px; 
+    max-width: 700px;
+    text-align: right;
 }
 
+.summary p {
+    clear: right;
+    float: right;
+    margin: 0;
+    width: 250px;
+}
 
 .intro {
     float: left; 
@@ -53,10 +60,6 @@ div, aside, header, section {
     float: left;
     position: relative;
     width: 100%;
-}
-
-.supporting {
-    width: 50%;
 }
 
 .explanation {
