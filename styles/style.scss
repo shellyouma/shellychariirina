@@ -7,6 +7,8 @@
 $width-size: 1040px; 
 $width-percent: 100%; 
 $media-width: 650px; 
+$margin: 10px;
+$padding: 10px;
 
 /*First block Zen Garden Layout */
 
@@ -95,8 +97,6 @@ header h2 {
 
 /* Second block Zen Garden Layout */
 
-$margin: 10px;
-$padding: 10px;
 @mixin img-centered{
     display: flex;
     align-items: center;
@@ -273,3 +273,50 @@ $padding: 10px;
 
 }
 
+@media only screen {
+	
+	.requirements {
+		background: $color-3;
+		clear: both;
+		display: block;
+		float: center;
+		padding: 1em;
+		margin: 1em 0 1em 0;
+		
+	}
+	.requirements h3, .requirements p {
+				margin: 0 1.5em 0 1.5em;
+	}
+	
+	.requirements p:last-child {
+		text-align:center;
+		margin-top: 1em;
+		font-size: 1.5em;
+	}
+	
+	.sidebar {
+		background: $color-3;
+		clear: both;
+		display: block;
+		float: center;
+		padding: 1em;
+		margin: 1em 0 1em 0;
+	}
+	li {
+		text-align:center;
+	}
+	aside h3{
+		text-align:center;
+		margin-left: 35px;
+	
+	}
+
+	footer {
+		background: $color-3;
+		display: block;
+		text-align:center;
+		padding: 1em;
+		margin: 1em 0 1em 0;
+
+	}
+}
