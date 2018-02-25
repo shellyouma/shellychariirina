@@ -83,13 +83,13 @@ h1 {
 	line-height: 1.2;
 	margin: 0 0 .4em;
 
-	@include MQ(S) {
+/*	@include MQ(S) {
 		font-size: 3.2rem;
-	}
+	}*/
 
-	@include MQ(M) {
+/*	@include MQ(M) {
 		font-size: 4rem;
-	}
+	}*/
 }
 
 h2 {
@@ -97,10 +97,10 @@ h2 {
 	text-transform: uppercase;
 	margin: 1em 0;
 
-	@include MQ(S) {
+/*	@include MQ(S) {
 		font-size: 1.8rem;
 		margin: 1em 0 1.4em;
-	}
+	}*/
 }
 
 p {
