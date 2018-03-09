@@ -1,13 +1,21 @@
-
 /* Import the different style sheets here */
 @import "style-guide.scss";
 @import "reset.css";
 
 $width-size: 1040px;
-$width-percent: 100%;
+$width-percent: 95%;
 $media-width: 650px;
-$margin: 10px;
+$margin: 0 5% 5% 2.5%;
 $padding: 10px;
+$margin-mobile: 6%;
+$width-mobile: 80%;
+$width-full: 40%;
+
+//Body
+body {
+	/* this is the page background */
+	background-color: $color-5;
+}
 
 /*First block Zen Garden Layout */
 
@@ -42,56 +50,43 @@ header h2 {
 }
 
 .intro {
-  float: left;
   height: 600px;
   width: $width-percent;
 }
 
 .summary {
-  position: relative;
   max-width: $width-size;
   margin: 80px auto 0;
-  width: $width-percent;
 }
 
 .preamble {
-  clear: left;
-  float: left;
-  left: 50%;
-  margin-left: -500px;
-  max-width: 500px;
-  position: relative;
-  top: 300px;
-  width: 50%;
-}
-
-.supporting {
-  float: left;
-  position: relative;
-  width: $width-percent;
+    width: $width-full;
+    margin: $margin;
+    padding: $padding;
+    position: relative;
+    top: 300px;
+    @media (max-width:$media-width) {
+        margin: $margin-mobile;
+        top: 50px;
+        width: $width-mobile;
+        float: left;
+    }
 }
 
 .explanation {
-  float: left;
-  margin-left: 1.5%;
-  max-width: 500px;
-  padding-bottom: 20px;
-  position: relative;
-  left: 50%;
+    width: $width-full;
+    margin: $margin;
+    padding: $padding;
+    position: relative;
+    margin-left: 50%;
+    top: -60px;
+    @media (max-width:$media-width) {
+        margin: $margin-mobile;
+        width: $width-mobile;
+        margin-top: 100%;
+        clear: both;
+    }
 }
-@media (max-width:$media-width) {
-  .preamble {
-    margin-left: 0;
-    max-width: 500px;
-    top: 50px;
-    left:0;
-    width: 90%;
-  }
-  .explanation{
-    left:0;
-  }
-}
-
 
 /* Second block Zen Garden Layout */
 
@@ -101,110 +96,72 @@ header h2 {
   justify-content: center;
 }
 
-.participation, .participation::after{
+.participation, .participation::after, .benefits, .benefits::before {
   display: inline-block;
-  width: 40%;
+  width: $width-full;//40%;
   margin: $margin;
   padding: $padding;
-  border: 3px solid red;
   float: left;
   clear: both;
+    top: 0px;
 }
 .participation{
-  position: relative;
+    position: relative;
+    @media (max-width:$media-width) {
+        margin: $margin-mobile;
+        width: $width-mobile;
+        margin-bottom: 250px;
+    }
 }
 
 .participation::after{
   position: absolute;
+  right: -114%;
+  // content:url();
+  content: "image";
+  border: 3px solid yellow;
+  width: $width-percent;
+  height: 97%;
+  //padding: $padding;
+  @include img-centered;
+    @media (max-width:$media-width) {
+        margin: $margin-mobile;
+        width: $width-percent;
+        top: 100%;
+        right: -7.5%;
+    }
+}
+
+/* benefits */
+
+.benefits{
+  position: relative;
+  margin-left: 48%;
+    @media (max-width:$media-width) {
+        margin: $margin-mobile;
+        width: $width-mobile;
+        margin-top: 100%;
+        margin-bottom: 70%;
+    }
+}
+.benefits::before{
+  position: absolute;
   top:-15px;
-  right: -120%;
+  right: 102%;
   // content:url();
   content: "image";
   border: 3px solid yellow;
   width: $width-percent;
   height: 95%;
-  padding: $padding;
+  //padding: $padding;
   @include img-centered;
+    @media (max-width:$media-width) {
+        margin: $margin-mobile;
+        width: $width-percent;
+        top: 100%;
+        right: -7.5%;
+    }
 }
-
-/* benefits */
-.benefits, .benefits::before{
-  width: 42%;
-  margin: $margin;
-  padding: $padding;
-  border: 3px solid red;
-  float: left;
-  clear: both;
-}
-.benefits{
-  position: relative;
-  margin-left: 48%;
-}
-.benefits::before{
-  position: absolute;
-  top:-15px;
-  right: 108%;
-  // content:url();
-  content: "image";
-  border: 3px solid yellow;
-  width: 93%;
-  height: 90%;
-  padding: $padding;
-  @include img-centered;
-}
-@media (max-width: $media-width) and (min-width:481px){
-  .participation, .participation::after{
-    width: 90%;
-  }
-  .participation{
-    margin-bottom: 250px;
-  }
-  .participation::after{
-    top:100%;
-    right: 1%;
-  }
-  .benefits, .benefits::before{
-    width: 80%;
-  }
-  .benefits::before{
-    top:100%;
-    right: -2%;
-    width: 95%;
-  }
-  .benefits{
-    margin-top: 30%;
-    margin-bottom: 50%;
-    margin-left: 0;
-  }
-}
-@media(max-width: 480px){
-  .participation, .participation::after{
-    width: 90%;
-  }
-  .participation{
-    margin-bottom: 80%;
-    margin-top: 270px;
-    margin-left: 0;
-  }
-  .participation::after{
-    top:100%;
-    right: 1%;
-  }
-  .benefits, .benefits::before{
-    width: 90%;
-  }
-  .benefits::before{
-    top:100%;
-    right: 1%;
-  }
-  .benefits{
-    margin-top: 30%;
-    margin-bottom: 70%;
-    margin-left: 3%;
-  }
-}
-
-
 /*Third block Zen Garden Layout */
 
 @media (min-width: $media-width) {
@@ -297,7 +254,9 @@ header h2 {
     padding: 1em;
     margin: 1em 0 1em 0;
   }
-  li {
+  li a{
+      display: block;
+      width: $width-full;
     text-align:center;
   }
   aside h3{
@@ -314,4 +273,42 @@ header h2 {
     margin: 1em 0 1em 0;
 
   }
+}
+
+//Typography
+h1, h2 {
+	font-family: $secondary-font;
+	color: $color-2;
+}
+
+h1 {
+	font-size: 2.4rem;
+	font-weight: 300;
+	line-height: 1.2;
+	margin: 0 0 .4em;
+}
+
+h2 {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 1em 0;
+}
+
+p {
+	font-size: 1.4rem;
+	line-height: 1.4;
+	color: lighten($color-2, 25%);
+
+	a {
+		color: $color-1;
+		text-decoration: underline;
+	}
+}
+.design-selection li a {
+          color: $color-5;
+          border-color: lighten($color-2, 5%);
+      }
+.requirements p {
+    color: $color-5;
+    border-color: lighten($color-2, 5%);
 }

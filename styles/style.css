@@ -1,10 +1,14 @@
 /* Import the different style sheets here */
 @import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
 @import url(reset.css);
+body {
+  /* this is the page background */
+  background-color: #eff1f3; }
+
 /*First block Zen Garden Layout */
 header {
   text-align: center;
-  width: 100%;
+  width: 95%;
   max-width: 1040px;
   position: relative;
   margin: 0 auto;
@@ -29,148 +33,104 @@ header h2 {
   display: block; }
 
 .intro {
-  float: left;
   height: 600px;
-  width: 100%; }
+  width: 95%; }
 
 .summary {
-  position: relative;
   max-width: 1040px;
-  margin: 80px auto 0;
-  width: 100%; }
+  margin: 80px auto 0; }
 
 .preamble {
-  clear: left;
-  float: left;
-  left: 50%;
-  margin-left: -500px;
-  max-width: 500px;
+  width: 40%;
+  margin: 0 5% 5% 2.5%;
+  padding: 10px;
   position: relative;
-  top: 300px;
-  width: 50%; }
-
-.supporting {
-  float: left;
-  position: relative;
-  width: 100%; }
+  top: 300px; }
+  @media (max-width: 650px) {
+    .preamble {
+      margin: 6%;
+      top: 50px;
+      width: 80%;
+      float: left; } }
 
 .explanation {
-  float: left;
-  margin-left: 1.5%;
-  max-width: 500px;
-  padding-bottom: 20px;
+  width: 40%;
+  margin: 0 5% 5% 2.5%;
+  padding: 10px;
   position: relative;
-  left: 50%; }
+  margin-left: 50%;
+  top: -60px; }
+  @media (max-width: 650px) {
+    .explanation {
+      margin: 6%;
+      width: 80%;
+      margin-top: 100%;
+      clear: both; } }
 
-@media (max-width: 650px) {
-  .preamble {
-    margin-left: 0;
-    max-width: 500px;
-    top: 50px;
-    left: 0;
-    width: 90%; }
-
-  .explanation {
-    left: 0; } }
 /* Second block Zen Garden Layout */
-.participation, .participation::after {
+.participation, .participation::after, .benefits, .benefits::before {
   display: inline-block;
   width: 40%;
-  margin: 10px;
+  margin: 0 5% 5% 2.5%;
   padding: 10px;
-  border: 3px solid red;
   float: left;
-  clear: both; }
+  clear: both;
+  top: 0px; }
 
 .participation {
   position: relative; }
+  @media (max-width: 650px) {
+    .participation {
+      margin: 6%;
+      width: 80%;
+      margin-bottom: 250px; } }
 
 .participation::after {
   position: absolute;
-  top: -15px;
-  right: -120%;
+  right: -114%;
   content: "image";
   border: 3px solid yellow;
-  width: 100%;
-  height: 95%;
-  padding: 10px;
+  width: 95%;
+  height: 97%;
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media (max-width: 650px) {
+    .participation::after {
+      margin: 6%;
+      width: 95%;
+      top: 100%;
+      right: -7.5%; } }
 
 /* benefits */
-.benefits, .benefits::before {
-  width: 42%;
-  margin: 10px;
-  padding: 10px;
-  border: 3px solid red;
-  float: left;
-  clear: both; }
-
 .benefits {
   position: relative;
   margin-left: 48%; }
+  @media (max-width: 650px) {
+    .benefits {
+      margin: 6%;
+      width: 80%;
+      margin-top: 100%;
+      margin-bottom: 70%; } }
 
 .benefits::before {
   position: absolute;
   top: -15px;
-  right: 108%;
+  right: 102%;
   content: "image";
   border: 3px solid yellow;
-  width: 93%;
-  height: 90%;
-  padding: 10px;
+  width: 95%;
+  height: 95%;
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media (max-width: 650px) {
+    .benefits::before {
+      margin: 6%;
+      width: 95%;
+      top: 100%;
+      right: -7.5%; } }
 
-@media (max-width: 650px) and (min-width: 481px) {
-  .participation, .participation::after {
-    width: 90%; }
-
-  .participation {
-    margin-bottom: 250px; }
-
-  .participation::after {
-    top: 100%;
-    right: 1%; }
-
-  .benefits, .benefits::before {
-    width: 80%; }
-
-  .benefits::before {
-    top: 100%;
-    right: -2%;
-    width: 95%; }
-
-  .benefits {
-    margin-top: 30%;
-    margin-bottom: 50%;
-    margin-left: 0; } }
-@media (max-width: 480px) {
-  .participation, .participation::after {
-    width: 90%; }
-
-  .participation {
-    margin-bottom: 80%;
-    margin-top: 270px;
-    margin-left: 0; }
-
-  .participation::after {
-    top: 100%;
-    right: 1%; }
-
-  .benefits, .benefits::before {
-    width: 90%; }
-
-  .benefits::before {
-    top: 100%;
-    right: 1%; }
-
-  .benefits {
-    margin-top: 30%;
-    margin-bottom: 70%;
-    margin-left: 3%; } }
 /*Third block Zen Garden Layout */
 @media (min-width: 650px) {
   .requirements h3 {
@@ -197,7 +157,7 @@ header h2 {
     text-align: center;
     margin-top: 1em;
     font-size: 1.5em;
-    max-width: 100%;
+    max-width: 95%;
     clear: both; }
 
   .wrapper {
@@ -248,7 +208,9 @@ header h2 {
     padding: 1em;
     margin: 1em 0 1em 0; }
 
-  li {
+  li a {
+    display: block;
+    width: 40%;
     text-align: center; }
 
   aside h3 {
@@ -261,5 +223,35 @@ header h2 {
     text-align: center;
     padding: 1em;
     margin: 1em 0 1em 0; } }
+h1, h2 {
+  font-family: "Pathway Gothic One", sans-serif;
+  color: #272727; }
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 .4em; }
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0; }
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #676767; }
+  p a {
+    color: #fed766;
+    text-decoration: underline; }
+
+.design-selection li a {
+  color: #eff1f3;
+  border-color: #343434; }
+
+.requirements p {
+  color: #eff1f3;
+  border-color: #343434; }
 
 /*# sourceMappingURL=style.css.map */
