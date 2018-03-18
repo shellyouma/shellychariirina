@@ -20,33 +20,20 @@ body {
 /*First block Zen Garden Layout */
 
 header {
-  text-align: center;
-  width: $width-percent;
+  display: block;
+  margin: 0 auto;
   max-width: $width-size;
   position: relative;
-  margin: 0 auto;
-  display: block;
-}
-
-header h1 {
-  display: inline-block;
-  min-height: 70px;
-  margin: 60px auto 0;
-}
-
-header h2 {
-  display: block;
-  text-align: right;
-  max-width: 700px;
-  text-align: right;
+  text-align: center;
+  width: $width-percent;
 }
 
 .summary p {
   clear: right;
+  display: block;
   float: right;
   margin: 0;
   width: 250px;
-  display: block;
 }
 
 .intro {
@@ -55,249 +42,209 @@ header h2 {
 }
 
 .summary {
-  max-width: $width-size;
   margin: 80px auto 0;
+  max-width: $width-size;
 }
 
 .preamble {
-    width: $width-full;
     margin: $margin;
     padding: $padding;
     position: relative;
     top: 300px;
+    width: $width-full;
     @media (max-width:$media-width) {
-        margin: $margin-mobile;
+      float: left;
+      margin: $margin-mobile;
         top: 50px;
         width: $width-mobile;
-        float: left;
     }
 }
 
 .explanation {
-    width: $width-full;
-    margin: $margin;
+    margin-left: 50%;
     padding: $padding;
     position: relative;
-    margin-left: 50%;
-    top: -60px;
+    top: -38px;
+    width: $width-full;
     @media (max-width:$media-width) {
+        float: left;
         margin: $margin-mobile;
-        width: $width-mobile;
         margin-top: 100%;
-        clear: both;
+        width: $width-mobile;
     }
 }
 
 /* Second block Zen Garden Layout */
 
 @mixin img-centered{
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 
 .participation, .participation::after, .benefits, .benefits::before {
+  clear: both;
   display: inline-block;
-  width: $width-full;//40%;
   margin: $margin;
   padding: $padding;
-  float: left;
-  clear: both;
-    top: 0px;
+  top: 0;
+  width: $width-full;//40%;
 }
 .participation{
     position: relative;
     @media (max-width:$media-width) {
         margin: $margin-mobile;
-        width: $width-mobile;
         margin-bottom: 250px;
+        width: $width-mobile;
     }
 }
 
 .participation::after{
-  position: absolute;
-  right: -114%;
+  border: 3px solid yellow;
   // content:url();
   content: "image";
-  border: 3px solid yellow;
-  width: $width-percent;
   height: 97%;
+  position: absolute;
+  right: -114%;
+  width: $width-percent;
   //padding: $padding;
   @include img-centered;
     @media (max-width:$media-width) {
         margin: $margin-mobile;
-        width: $width-percent;
-        top: 100%;
         right: -7.5%;
+        top: 100%;
+        width: $width-percent;
     }
 }
 
 /* benefits */
 
 .benefits{
-  position: relative;
   margin-left: 48%;
+  position: relative;
     @media (max-width:$media-width) {
         margin: $margin-mobile;
-        width: $width-mobile;
-        margin-top: 100%;
         margin-bottom: 70%;
+      margin-top: 100%;
+      width: $width-mobile;
     }
 }
 .benefits::before{
-  position: absolute;
-  top:-15px;
-  right: 102%;
+  border: 3px solid yellow;
   // content:url();
   content: "image";
-  border: 3px solid yellow;
-  width: $width-percent;
   height: 95%;
+  position: absolute;
+  right: 102%;
+  top:-15px;
+  width: $width-percent;
   //padding: $padding;
   @include img-centered;
     @media (max-width:$media-width) {
         margin: $margin-mobile;
-        width: $width-percent;
-        top: 100%;
         right: -7.5%;
+        top: 100%;
+        width: $width-percent;
     }
 }
 /*Third block Zen Garden Layout */
 
-@media (min-width: $media-width) {
-  .requirements h3 {
-    text-align: center;
+.requirements {
+  background-color: $color-3;
+  clear: both;
+  column-count: 2;
+  column-width: $width-full;
+  left: auto;
+  padding: $padding;
+  p {
+    border-color: lighten($color-2, 5%);
+    color: $color-5;
+    padding: $padding;
   }
-  .requirements p {
-    margin-top: 0;
-    max-width: 40%;
+  p:last-child {
+    column-span: all;
+    padding: 0 20% 20px;
+    width: 60%;
   }
-  .requirements p:nth-child(3) {
-    clear: left;
-    margin-right: 5%;
-
+  @media (max-width:$media-width) {
+        column-count: 1;
+    p {
+      margin: $margin-mobile;
+      width: $width-percent;
+    }
   }
-  .requirements p:nth-child(4) {
-    clear:left;
-    float: right;
-    margin-top: -192px;
-  }
-
-  .requirements p:nth-child(5) {
-    float: right;
-    margin-top: -111px;
-  }
-
-  .requirements p:last-child {
-    text-align:center;
-    margin-top: 1em;
-    font-size: 1.5em;
-    max-width: $width-percent;
-    clear:both;
-  }
-
-  .wrapper {
-    display:block;
-    width: 75%;
-    margin: 0 auto;
-  }
-
-  .design-selection{
-    float:center;
-    clear: both;
-  }
-  .design-selection ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .design-selection li {
-    display: inline;
-    margin: 2em;
-  }
-
-  .design-archives {
-    float:right;
-  }
-  .zen-resources {
-    float:left;
-  }
-
 }
 
-@media only screen {
+footer {
+  background: $color-3;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width:100%;
+  a {
+    color: $color-5;
+    padding: 4%;
+  }
+}
 
-  .requirements {
+
+.sidebar {
     background: $color-3;
     clear: both;
-    display: block;
-    float: center;
+    margin: 0 0 1em 0;
     padding: 1em;
-    margin: 1em 0 1em 0;
-
-  }
-  .requirements h3, .requirements p {
-    margin: 0 1.5em 0 1.5em;
-  }
-
-  .requirements p:last-child {
-    text-align:center;
-    margin-top: 1em;
-    font-size: 1.5em;
-  }
-
-  .sidebar {
-    background: $color-3;
-    clear: both;
-    display: block;
-    float: center;
-    padding: 1em;
-    margin: 1em 0 1em 0;
-  }
-  li a{
-      display: block;
-      width: $width-full;
-    text-align:center;
-  }
-  aside h3{
-    text-align:center;
-    margin-left: 35px;
-
-  }
-
-  footer {
-    background: $color-3;
-    display: block;
-    text-align:center;
-    padding: 1em;
-    margin: 1em 0 1em 0;
-
+  ul {
+    list-style-type: none;
+    margin: 0 auto;
+    text-align: center;
+    li {
+      color: $color-5;
+      display: inline-block;
+      padding: $padding;
+      text-align: left;
+      //width: $width-full;
+      a {
+        color: $color-5;
+        display: block;
+        width: $width-full;
+      }
+    }
   }
 }
 
 //Typography
-h1, h2 {
-	font-family: $secondary-font;
+h1, h2, h3 {
 	color: $color-2;
+  font-family: $secondary-font;
 }
 
 h1 {
+  display: inline-block;
 	font-size: 2.4rem;
 	font-weight: 300;
 	line-height: 1.2;
-	margin: 0 0 .4em;
+  margin: 60px auto 0;
+  min-height: 70px;
 }
 
 h2 {
-	font-weight: bold;
-	text-transform: uppercase;
-	margin: 1em 0;
+  display: block;
+  font-weight: bold;
+  margin: 1em 0;
+  max-width: 700px;
+  text-align: right;
+  text-transform: uppercase;
 }
-
+h3 {
+  column-span: all;
+  font-size: 1.8em;
+  text-align: center;
+}
 p {
+  color: lighten($color-2, 25%);
 	font-size: 1.4rem;
 	line-height: 1.4;
-	color: lighten($color-2, 25%);
 
 	a {
 		color: $color-1;
@@ -305,10 +252,26 @@ p {
 	}
 }
 .design-selection li a {
-          color: $color-5;
-          border-color: lighten($color-2, 5%);
-      }
-.requirements p {
-    color: $color-5;
-    border-color: lighten($color-2, 5%);
+  border-color: lighten($color-2, 5%);
+  color: $color-5;
+}
+
+//sun animation
+aside:before {
+  border: 3px solid blue;
+  content: 'image1';
+  height: 300px;
+  left: 4%;
+  position: absolute;
+  top: 225px;
+  width: 700px;
+}
+aside:after {
+  border: 3px solid blue;
+  content: 'image2';
+  height: 300px;
+  left: 4%;
+  position: absolute;
+  top: 225px;
+  width: 700px;
 }
