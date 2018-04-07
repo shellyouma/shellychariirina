@@ -8,8 +8,9 @@ footer {
   a {
     color: $color-5;
     padding: 4%;
-	font-size: 1.5em;
+	font-size: 2em;
     position:relative;
+    font-family: $secondary-font;
   }
   a:hover {
    color: $color-1;
