@@ -1,0 +1,17 @@
+footer {
+  background: $color-3;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+  width:100%;
+  a {
+    color: $color-5;
+    padding: 4%;
+	font-size: 1.5em;
+    position:relative;
+  }
+  a:hover {
+   color: $color-1;
+  }
+}

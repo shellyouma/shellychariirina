@@ -1,77 +1,4 @@
-@media (min-width: 768px) {
-
-
-.requirements h3 {
-  text-align: center;
-}
-.requirements p {
-  margin-top: 0;
-  max-width: 40%;
-}
-.requirements p:nth-child(3) {
-  clear: left;
-  margin-right: 5%;
-
-}
-.requirements p:nth-child(4) {
-clear:left;
-float: right;
-margin-top: -192px;
-}
-
-.requirements p:nth-child(5) {
-  float: right;
-      margin-top: -111px;
-
-}
-
-.requirements p:last-child {
-		text-align:center;
-		margin-top: 1em;
-		font-size: 1.5em;
-		max-width: 100%;
-		clear:both;
-	}
-
-
-.wrapper {
-	display:block;
-	width: 75%;
-    margin: 0 auto;
-}
-
-.design-selection{
-	float:center;
-	clear: both;
-}
-.design-selection ul{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.design-selection li {
-	display: inline;
-	margin: 2em;
-}
-
-.design-archives {
-	float:right;
-}
-.zen-resources {
-	float:left;
-}
-
-footer a {
-    position:relative;
-    margin-bottom: 50px;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-}
-
-$cloud-color: rgb(63,86,170);
+$cloud-color: #fff;
 /* CLOUDY */
 footer a:nth-child(1):after {
 	content: '';
@@ -248,7 +175,7 @@ footer a:nth-child(3):before {
 }
 footer a:nth-child(3):after {
   animation: sunny 5s ease-in-out infinite;
-	background: #FFEE44;
+	background: $color-1;
 	border-radius: 50%;
 	box-shadow: rgba(255,255,0,0.2) 0 0 0 15px;
 	content: '';
@@ -429,6 +356,4 @@ footer a:nth-child(5):before {
 			#EEEEEE 110px 45px,
 			#EEEEEE 90px 35px;
 	}
-}
-
 }

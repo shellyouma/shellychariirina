@@ -1,176 +1,5 @@
 /* Import the different style sheets here */
 @import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
-@import url(reset.css);
-body {
-  /* this is the page background */
-  background-color: #eff1f3; }
-
-/*First block Zen Garden Layout */
-header {
-  display: block;
-  margin: 0 auto;
-  max-width: 1040px;
-  position: relative;
-  text-align: center;
-  width: 95%; }
-
-.summary p {
-  clear: right;
-  display: block;
-  float: right;
-  margin: 0;
-  width: 250px; }
-
-.intro {
-  height: 600px;
-  width: 95%; }
-
-.summary {
-  margin: 80px auto 0;
-  max-width: 1040px; }
-
-.preamble {
-  margin: 0 5% 5% 2.5%;
-  padding: 10px;
-  position: relative;
-  top: 300px;
-  width: 40%; }
-  @media (max-width: 650px) {
-    .preamble {
-      float: left;
-      margin: 6%;
-      top: 50px;
-      width: 80%; } }
-
-.explanation {
-  margin-left: 50%;
-  padding: 10px;
-  position: relative;
-  top: -38px;
-  width: 40%; }
-  @media (max-width: 650px) {
-    .explanation {
-      float: left;
-      margin: 6%;
-      margin-top: 100%;
-      width: 80%; } }
-
-/* Second block Zen Garden Layout */
-.participation, .participation::after, .benefits, .benefits::before {
-  clear: both;
-  display: inline-block;
-  margin: 0 5% 5% 2.5%;
-  padding: 10px;
-  top: 0;
-  width: 40%; }
-
-.participation {
-  position: relative; }
-  @media (max-width: 650px) {
-    .participation {
-      margin: 6%;
-      margin-bottom: 250px;
-      width: 80%; } }
-
-.participation::after {
-  border: 3px solid yellow;
-  content: "image";
-  height: 97%;
-  position: absolute;
-  right: -114%;
-  width: 95%;
-  align-items: center;
-  display: flex;
-  justify-content: center; }
-  @media (max-width: 650px) {
-    .participation::after {
-      margin: 6%;
-      right: -7.5%;
-      top: 100%;
-      width: 95%; } }
-
-/* benefits */
-.benefits {
-  margin-left: 48%;
-  position: relative; }
-  @media (max-width: 650px) {
-    .benefits {
-      margin: 6%;
-      margin-bottom: 70%;
-      margin-top: 100%;
-      width: 80%; } }
-
-.benefits::before {
-  border: 3px solid yellow;
-  content: "image";
-  height: 95%;
-  position: absolute;
-  right: 102%;
-  top: -15px;
-  width: 95%;
-  align-items: center;
-  display: flex;
-  justify-content: center; }
-  @media (max-width: 650px) {
-    .benefits::before {
-      margin: 6%;
-      right: -7.5%;
-      top: 100%;
-      width: 95%; } }
-
-/*Third block Zen Garden Layout */
-.requirements {
-  background-color: #275dad;
-  clear: both;
-  column-count: 2;
-  column-width: 40%;
-  left: auto;
-  padding: 10px; }
-  .requirements p {
-    border-color: #343434;
-    color: #eff1f3;
-    padding: 10px; }
-  .requirements p:last-child {
-    column-span: all;
-    padding: 0 20% 20px;
-    width: 60%; }
-  @media (max-width: 650px) {
-    .requirements {
-      column-count: 1; }
-      .requirements p {
-        margin: 6%;
-        width: 95%; } }
-
-footer {
-  background: #275dad;
-  display: block;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  width: 100%; }
-  footer a {
-    color: #eff1f3;
-    padding: 4%; }
-
-.sidebar {
-  background: #275dad;
-  clear: both;
-  margin: 0 0 1em 0;
-  padding: 1em; }
-  .sidebar ul {
-    list-style-type: none;
-    margin: 0 auto;
-    text-align: center; }
-    .sidebar ul li {
-      color: #eff1f3;
-      display: inline-block;
-      padding: 10px;
-      text-align: left; }
-      .sidebar ul li a {
-        color: #eff1f3;
-        display: block;
-        width: 40%; }
-
 h1, h2, h3 {
   color: #272727;
   font-family: "Pathway Gothic One", sans-serif; }
@@ -194,7 +23,8 @@ h2 {
 h3 {
   column-span: all;
   font-size: 1.8em;
-  text-align: center; }
+  text-align: center;
+  margin: 2% 0 2% 0; }
 
 p {
   color: #676767;
@@ -204,26 +34,425 @@ p {
     color: #fed766;
     text-decoration: underline; }
 
-.design-selection li a {
-  border-color: #343434;
-  color: #eff1f3; }
+body {
+  /* this is the page background */
+  background-color: #eff1f3; }
+
+/*First block Zen Garden Layout */
+header {
+  display: block;
+  margin: 0 auto;
+  max-width: 1040px;
+  position: relative;
+  text-align: center;
+  width: 95%;
+  z-index: 2; }
+
+.intro {
+  height: 600px;
+  width: 95%; }
+
+.summary {
+  margin-left: 50%;
+  padding: 10px;
+  position: relative;
+  width: 40%;
+  z-index: 2; }
+  .summary p {
+    clear: right;
+    display: block;
+    float: right;
+    margin: 0;
+    width: 250px; }
+  @media (max-width: 650px) {
+    .summary {
+      float: left;
+      margin: 6%;
+      margin-top: 75%;
+      width: 80%; } }
+
+.preamble {
+  margin: 0 5% 5% 2.5%;
+  padding: 10px;
+  position: relative;
+  top: 300px;
+  width: 40%; }
+  @media (max-width: 650px) {
+    .preamble {
+      float: left;
+      margin: 6%;
+      top: 50px;
+      width: 80%; } }
+
+.explanation {
+  margin-left: 50%;
+  padding: 10px;
+  position: relative;
+  top: -74px;
+  width: 40%; }
+  @media (max-width: 650px) {
+    .explanation {
+      float: left;
+      margin: 6%;
+      margin-top: 100%;
+      width: 80%; } }
+
+/* Second block Zen Garden Layout */
+/* basic formatting for second block */
+.participation, .participation::after, .benefits, .benefits::before {
+  clear: both;
+  display: inline-block;
+  margin: 0 5% 5% 2.5%;
+  padding: 10px;
+  top: 0;
+  width: 40%; }
+
+/* participation */
+.participation {
+  position: relative; }
+  @media (max-width: 650px) {
+    .participation {
+      margin: 6%;
+      margin-bottom: 250px;
+      width: 80%; } }
+
+/* benefits */
+.benefits {
+  margin-left: 48%;
+  position: relative; }
+  @media (max-width: 650px) {
+    .benefits {
+      margin: 6%;
+      margin-bottom: 70%;
+      margin-top: 100%;
+      width: 80%; } }
+
+/* graphics */
+.participation::after {
+  content: '';
+  background-image: url("../images/001-home.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90;
+  height: 97%;
+  position: absolute;
+  right: -114%;
+  width: 95%;
+  align-items: center;
+  display: flex;
+  justify-content: center; }
+  @media (max-width: 650px) {
+    .participation::after {
+      margin: 6%;
+      right: -7.5%;
+      top: 100%;
+      width: 95%; } }
+
+.benefits::before {
+  content: "";
+  background-image: url("../images/002-forest.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 47%;
+  height: 95%;
+  position: absolute;
+  right: 102%;
+  top: -15px;
+  width: 95%;
+  align-items: center;
+  display: flex;
+  justify-content: center; }
+  @media (max-width: 650px) {
+    .benefits::before {
+      margin: 6%;
+      right: -7.5%;
+      top: 100%;
+      width: 95%; } }
+
+/*requirements*/
+.requirements {
+  clear: both;
+  padding: 10px;
+  position: relative;
+  width: 90%; }
+  .requirements p {
+    float: left;
+    width: 47.5%; }
+    @media (max-width: 650px) {
+      .requirements p {
+        margin: 6%;
+        width: 100%; } }
+  .requirements p:nth-child(-n+3) {
+    clear: left;
+    margin-right: 5%; }
+  .requirements p:nth-child(4) {
+    position: absolute;
+    right: 0; }
+    @media (max-width: 650px) {
+      .requirements p:nth-child(4) {
+        position: relative; } }
+  .requirements p:last-child {
+    padding: 0 20% 20px;
+    width: 60%;
+    text-align: center; }
+
+/* Third Block - Requirements*/
+.sidebar {
+  background: #275dad;
+  clear: both;
+  margin: 0 0 1em 0;
+  padding: 100px 0 0 1em; }
+  .sidebar a:hover {
+    color: #fed766; }
+  .sidebar ul {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .sidebar ul li {
+      color: #eff1f3;
+      font-size: 1.3em;
+      text-align: left;
+      width: 150px; }
+      .sidebar ul li a {
+        color: #eff1f3;
+        display: block;
+        width: 40%;
+        text-decoration: none; }
+
+/* CLOUDY */
+footer a:nth-child(1):after {
+  content: '';
+  /* Runs the cloudy animation for 5 sec */
+  animation: cloudy 5s ease-in-out infinite;
+  /* Blue so you can see it. Every blue needs to be changed*/
+  background: #fff;
+  /* Changes the squares to circles*/
+  border-radius: 50%;
+  /* Circles that make up the cloud*/
+  box-shadow: #fff 65px -15px 0 -5px, #fff 25px -25px, #fff 30px 10px, #fff 60px 15px 0 -10px, #fff 85px 5px 0 -5px;
+  height: 50px;
+  width: 50px;
+  /* Screen position. Can be changed for website*/
+  position: absolute;
+  top: 100%;
+  left: -3%; }
+
+/* Will move up and down 20px */
+@keyframes cloudy {
+  50% {
+    transform: translateY(-20px); } }
+/* RAINY */
+footer a:nth-child(2):after {
+  content: '';
+  /* Runs rainy animation. Same thing as cloudy but timed different so they don't move together.*/
+  animation: rainy 5s ease-in-out infinite 1s;
+  background: #CCCCCC;
+  border-radius: 50%;
+  /* Cloud circles */
+  box-shadow: #CCCCCC 65px -15px 0 -5px,  #CCCCCC 25px -25px,  #CCCCCC 30px 10px,  #CCCCCC 60px 15px 0 -10px,  #CCCCCC 85px 5px 0 -5px;
+  height: 50px;
+  width: 50px;
+  /* Position to be changed*/
+  position: absolute;
+  left: 15%;
+  top: 100%; }
+
+footer a:nth-child(2):before {
+  animation: rainy_rain .7s infinite linear;
+  content: '';
+  background: #CCCCCC;
+  border-radius: 50%;
+  display: block;
+  height: 6px;
+  width: 3px;
+  opacity: 0.3;
+  transform: scale(0.9);
+  right: 170%;
+  top: 200%;
+  position: relative; }
+
+@keyframes rainy {
+  50% {
+    transform: translateY(-20px); } }
+/* Animation for each raindrop. HAS TO BE CHANGED WHEN CLOUD IS MOVED! I have no idea how to make it stay with the cloud and have it animated.*/
+@keyframes rainy_rain {
+  0% {
+    box-shadow: rgba(0, 0, 0, 0) 30px 30px, rgba(0, 0, 0, 0) 40px 40px, #000 50px 75px, #000 55px 50px, #000 70px 100px, #000 80px 95px, #000 110px 45px, #000 90px 35px; }
+  25% {
+    box-shadow: #000 30px 45px, #000 40px 60px, #000 50px 90px, #000 55px 65px, rgba(0, 0, 0, 0) 70px 120px, rgba(0, 0, 0, 0) 80px 120px, #000 110px 70px, #000 90px 60px; }
+  26% {
+    box-shadow: #000 30px 45px, #000 40px 60px, #000 50px 90px, #000 55px 65px, rgba(0, 0, 0, 0) 70px 40px, rgba(0, 0, 0, 0) 80px 20px, #000 110px 70px, #000 90px 60px; }
+  50% {
+    box-shadow: #000 30px 70px, #000 40px 80px, rgba(0, 0, 0, 0) 50px 100px, #000 55px 80px, #000 70px 60px, #000 80px 45px, #000 110px 95px, #000 90px 85px; }
+  51% {
+    box-shadow: #000 30px 70px, #000 40px 80px, rgba(0, 0, 0, 0) 50px 45px, #000 55px 80px, #000 70px 60px, #000 80px 45px, #000 110px 95px, #000 90px 85px; }
+  75% {
+    box-shadow: #000 30px 95px, #000 40px 100px, #000 50px 60px, rgba(0, 0, 0, 0) 55px 95px, #000 70px 80px, #000 80px 70px, rgba(0, 0, 0, 0) 110px 120px, rgba(0, 0, 0, 0) 90px 110px; }
+  76% {
+    box-shadow: #000 30px 95px, #000 40px 100px, #000 50px 60px, rgba(0, 0, 0, 0) 55px 35px, #000 70px 80px, #000 80px 70px, rgba(0, 0, 0, 0) 110px 25px, rgba(0, 0, 0, 0) 90px 15px; }
+  100% {
+    box-shadow: rgba(0, 0, 0, 0) 30px 120px, rgba(0, 0, 0, 0) 40px 120px, #000 50px 75px, #000 55px 50px, #000 70px 100px, #000 80px 95px, #000 110px 45px, #000 90px 35px; } }
+/* SUNNY */
+footer a:nth-child(3):before {
+  background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+  content: '';
+  height: 140px;
+  width: 20px;
+  opacity: 1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transform: rotate(90deg); }
+
+footer a:nth-child(3):after {
+  animation: sunny 5s ease-in-out infinite;
+  background: #fed766;
+  border-radius: 50%;
+  box-shadow: rgba(255, 255, 0, 0.2) 0 0 0 15px;
+  content: '';
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  left: 23%;
+  top: 80%; }
+
+@keyframes sunny {
+  50% {
+    transform: translateY(-20px); } }
+/* STORMY */
+footer a:nth-child(4):after {
+  content: '';
+  animation: stormy 5s ease-in-out infinite;
+  background: #222222;
+  border-radius: 50%;
+  box-shadow: #222222 65px -15px 0 -5px,  #222222 25px -25px,  #222222 30px 10px,  #222222 60px 15px 0 -10px,  #222222 85px 5px 0 -5px;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 15%;
+  top: 100%; }
+
+footer a:nth-child(4):before {
+  animation: stormy_thunder 2s steps(1, end) infinite;
+  border-left: 0px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 43px solid #f0de70;
+  box-shadow: #f0de70 -7px -32px;
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 60%;
+  top: 130%;
+  transform: rotate(14deg);
+  transform-origin: 50% -60px; }
+
+@keyframes stormy {
+  50% {
+    transform: translateY(-20px); } }
+@keyframes stormy_thunder {
+  0% {
+    transform: rotate(20deg);
+    opacity: 1; }
+  5% {
+    transform: rotate(-34deg);
+    opacity: 1; }
+  10% {
+    transform: rotate(0deg);
+    opacity: 1; }
+  15% {
+    transform: rotate(-34deg);
+    opacity: 0; } }
+/* SNOWY */
+footer a:nth-child(5):after {
+  content: '';
+  animation: snowy 5s ease-in-out infinite 1s;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: #fff 65px -15px 0 -5px, #fff 25px -25px, #fff 30px 10px, #fff 60px 15px 0 -10px, #fff 85px 5px 0 -5px;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 15%;
+  top: 100%; }
+
+footer a:nth-child(5):before {
+  animation: snowy_snow 2s infinite linear;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  height: 7px;
+  width: 7px;
+  opacity: 0.8;
+  transform: scale(0.9);
+  position: relative;
+  left: -40px;
+  top: 60px; }
+
+@keyframes snowy {
+  50% {
+    transform: translateY(-20px); } }
+@keyframes snowy_snow {
+  0% {
+    box-shadow: rgba(238, 238, 238, 0) 30px 30px, rgba(238, 238, 238, 0) 40px 40px, #EEEEEE 50px 75px, #EEEEEE 55px 50px, #EEEEEE 70px 100px, #EEEEEE 80px 95px, #EEEEEE 110px 45px, #EEEEEE 90px 35px; }
+  25% {
+    box-shadow: #EEEEEE 30px 45px, #EEEEEE 40px 60px, #EEEEEE 50px 90px, #EEEEEE 55px 65px, rgba(238, 238, 238, 0) 70px 120px, rgba(238, 238, 238, 0) 80px 120px, #EEEEEE 110px 70px, #EEEEEE 90px 60px; }
+  26% {
+    box-shadow: #EEEEEE 30px 45px, #EEEEEE 40px 60px, #EEEEEE 50px 90px, #EEEEEE 55px 65px, rgba(238, 238, 238, 0) 70px 40px, rgba(238, 238, 238, 0) 80px 20px, #EEEEEE 110px 70px, #EEEEEE 90px 60px; }
+  50% {
+    box-shadow: #EEEEEE 30px 70px, #EEEEEE 40px 80px, rgba(238, 238, 238, 0) 50px 100px, #EEEEEE 55px 80px, #EEEEEE 70px 60px, #EEEEEE 80px 45px, #EEEEEE 110px 95px, #EEEEEE 90px 85px; }
+  51% {
+    box-shadow: #EEEEEE 30px 70px, #EEEEEE 40px 80px, rgba(238, 238, 238, 0) 50px 45px, #EEEEEE 55px 80px, #EEEEEE 70px 60px, #EEEEEE 80px 45px, #EEEEEE 110px 95px, #EEEEEE 90px 85px; }
+  75% {
+    box-shadow: #EEEEEE 30px 95px, #EEEEEE 40px 100px, #EEEEEE 50px 60px, rgba(238, 238, 238, 0) 55px 95px, #EEEEEE 70px 80px, #EEEEEE 80px 70px, rgba(238, 238, 238, 0) 110px 120px, rgba(238, 238, 238, 0) 90px 110px; }
+  76% {
+    box-shadow: #EEEEEE 30px 95px, #EEEEEE 40px 100px, #EEEEEE 50px 60px, rgba(238, 238, 238, 0) 55px 35px, #EEEEEE 70px 80px, #EEEEEE 80px 70px, rgba(238, 238, 238, 0) 110px 25px, rgba(238, 238, 238, 0) 90px 15px; }
+  100% {
+    box-shadow: rgba(238, 238, 238, 0) 30px 120px, rgba(238, 238, 238, 0) 40px 120px, #EEEEEE 50px 75px, #EEEEEE 55px 50px, #EEEEEE 70px 100px, #EEEEEE 80px 95px, #EEEEEE 110px 45px, #EEEEEE 90px 35px; } }
+footer {
+  background: #275dad;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+  width: 100%; }
+  footer a {
+    color: #eff1f3;
+    padding: 4%;
+    font-size: 1.5em;
+    position: relative; }
+  footer a:hover {
+    color: #fed766; }
 
 aside:before {
-  border: 3px solid blue;
-  content: 'image1';
-  height: 300px;
-  left: 4%;
-  position: absolute;
-  top: 225px;
-  width: 700px; }
+  content: '';
+  position: fixed; }
 
 aside:after {
-  border: 3px solid blue;
-  content: 'image2';
-  height: 300px;
-  left: 4%;
+  content: '';
+  left: 25%;
   position: absolute;
-  top: 225px;
-  width: 700px; }
+  top: 180px;
+  background: #f7da6b;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0px 0px 30px 30px rgba(255, 255, 204, 0.5), 0px 0px 30px 60px rgba(255, 230, 200, 0.5), 0px 0px 30px 90px rgba(255, 230, 220, 0.2);
+  transform: translate(0%, 30%);
+  animation: roll 10s infinite linear; }
+
+@keyframes roll {
+  0% {
+    transform: rotate(1); }
+  100% {
+    transform: rotate(360deg); } }
+@media (max-width: 650px) {
+  float: left;
+  margin: 6%;
+  margin-top: 100%;
+  width: 80%; }
 
 /*# sourceMappingURL=style.css.map */

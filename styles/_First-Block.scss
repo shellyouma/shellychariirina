@@ -1,0 +1,65 @@
+/*First block Zen Garden Layout */
+
+header {
+  display: block;
+  margin: 0 auto;
+  max-width: $width-size;
+  position: relative;
+  text-align: center;
+  width: $width-percent;
+  z-index: 2;
+}
+
+.intro {
+  height: 600px;
+  width: $width-percent;
+}
+
+.summary {
+    margin-left: 50%;
+    padding: $padding;
+    position: relative;
+    width: $width-full;
+    z-index: 2;
+    p {
+        clear: right;
+        display: block;
+        float: right;
+        margin: 0;
+        width: 250px;
+    }
+    @media (max-width:$media-width) {
+        float: left;
+        margin: $margin-mobile;
+        margin-top: 75%;
+        width: $width-mobile;
+    }
+}
+
+.preamble {
+    margin: $margin;
+    padding: $padding;
+    position: relative;
+    top: 300px;
+    width: $width-full;
+    @media (max-width:$media-width) {
+      float: left;
+      margin: $margin-mobile;
+      top: 50px;
+      width: $width-mobile;
+    }
+}
+
+.explanation {
+    margin-left: 50%;
+    padding: $padding;
+    position: relative;
+    top: -74px;
+    width: $width-full;
+    @media (max-width:$media-width) {
+        float: left;
+        margin: $margin-mobile;
+        margin-top: 100%;
+        width: $width-mobile;
+    }
+}

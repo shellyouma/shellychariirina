@@ -1,0 +1,29 @@
+/* Third Block - Requirements*/
+.sidebar {
+    background: $color-3;
+    clear: both;
+    margin: 0 0 1em 0;
+    padding: 100px 0 0 1em;
+    a:hover {
+	color: $color-1;
+    }
+  ul {
+    list-style-type: none;
+    text-align: center;
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+    li {
+      color: $color-5;
+		font-size: 1.3em;
+      text-align: left;
+	  width: 150px;
+      a {
+        color: $color-5;
+        display: block;
+        width: $width-full;
+		text-decoration: none;
+      }
+    }
+  }
+}

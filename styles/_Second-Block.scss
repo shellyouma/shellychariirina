@@ -1,0 +1,112 @@
+/* Second block Zen Garden Layout */
+
+/* basic formatting for second block */
+.participation, .participation::after, .benefits, .benefits::before {
+  clear: both;
+  display: inline-block;
+  margin: $margin;
+  padding: $padding;
+  top: 0;
+  width: $width-full;//40%;
+}
+
+/* participation */
+.participation{
+    position: relative;
+    @media (max-width:$media-width) {
+        margin: $margin-mobile;
+        margin-bottom: 250px;
+        width: $width-mobile;
+    }
+}
+
+/* benefits */
+.benefits{
+  margin-left: 48%;
+  position: relative;
+    @media (max-width:$media-width) {
+        margin: $margin-mobile;
+        margin-bottom: 70%;
+      margin-top: 100%;
+      width: $width-mobile;
+    }
+}
+
+/* graphics */
+.participation::after{
+  //border: 3px solid yellow;
+  content:'';
+  background-image: url('../images/001-home.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90;
+  height: 97%;
+  position: absolute;
+  right: -114%;
+  width: $width-percent;
+  //padding: $padding;
+  @include img-centered;
+    @media (max-width:$media-width) {
+        margin: $margin-mobile;
+        right: -7.5%;
+        top: 100%;
+        width: $width-percent;
+    }
+}
+
+.benefits::before{
+  //border: 3px solid yellow;
+  // content:url();
+  content: "";
+  background-image: url('../images/002-forest.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 47%;
+  height: 95%;
+  position: absolute;
+  right: 102%;
+  top:-15px;
+  width: $width-percent;
+  //padding: $padding;
+  @include img-centered;
+    @media (max-width:$media-width) {
+        margin: $margin-mobile;
+        right: -7.5%;
+        top: 100%;
+        width: $width-percent;
+    }
+}
+
+/*requirements*/
+.requirements {
+    clear: both;
+    //left: auto;
+    padding: $padding;
+    position: relative;
+    width: 90%;
+    p {
+        float: left;
+        //padding: $padding;
+        width: 47.5%;
+        @media (max-width:$media-width)  {
+            margin: $margin-mobile;
+            width: 100%;
+        }
+    }
+    p:nth-child(-n+3) {
+        clear: left;
+        margin-right: 5%;
+    }
+    p:nth-child(4) {
+        position: absolute;
+        right: 0;
+        @media (max-width:$media-width) {
+            position: relative;
+        }
+    }
+    p:last-child {
+        padding: 0 20% 20px;
+        width: 60%;
+        text-align: center;
+    }
+}
