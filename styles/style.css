@@ -40,7 +40,6 @@ body {
 
 /*First block Zen Garden Layout */
 header {
-  display: block;
   margin: 0 auto;
   max-width: 1040px;
   position: relative;
@@ -197,28 +196,60 @@ header {
     text-align: center; }
 
 /* Third Block - Requirements*/
-.sidebar {
+aside {
   background: #275dad;
-  clear: both;
+  border-top: 5px solid #275dad;
+  display: block;
+  float: left;
   margin: 0 0 1em 0;
-  padding: 100px 0 0 1em; }
-  .sidebar a:hover {
+  margin-bottom: -5px;
+  width: 100%; }
+
+.sidebar, .wrapper {
+  background: #275dad;
+  border-top: 5px solid #275dad;
+  display: block;
+  margin: 0 0 1em 0;
+  width: 100%; }
+  .sidebar a:hover, .wrapper a:hover {
     color: #fed766; }
-  .sidebar ul {
+  .sidebar .design-selection, .wrapper .design-selection {
+    background: #275dad;
+    float: left;
+    padding: 100px 0 0 0;
+    width: 50%; }
+    @media (max-width: 650px) {
+      .sidebar .design-selection, .wrapper .design-selection {
+        float: none;
+        width: 100%; } }
+  .sidebar .design-archives, .wrapper .design-archives {
+    background: #275dad;
+    float: right;
+    padding: 100px 0 0 0;
+    width: 50%; }
+    @media (max-width: 650px) {
+      .sidebar .design-archives, .wrapper .design-archives {
+        float: none;
+        width: 100%; } }
+  .sidebar .zen-resources, .wrapper .zen-resources {
+    background: #275dad;
+    float: right;
+    width: 50%; }
+    @media (max-width: 650px) {
+      .sidebar .zen-resources, .wrapper .zen-resources {
+        float: none;
+        width: 100%; } }
+  .sidebar ul, .wrapper ul {
     list-style-type: none;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; }
-    .sidebar ul li {
+    text-align: center; }
+    .sidebar ul li, .wrapper ul li {
       color: #eff1f3;
       font-size: 1.3em;
-      text-align: left;
-      width: 150px; }
-      .sidebar ul li a {
+      padding: 10px;
+      margin-bottom: 12px;
+      text-align: left; }
+      .sidebar ul li a, .wrapper ul li a {
         color: #eff1f3;
-        display: block;
-        width: 40%;
         text-decoration: none; }
 
 /* CLOUDY */
@@ -251,7 +282,7 @@ footer a:nth-child(2):after {
   background: #CCCCCC;
   border-radius: 50%;
   /* Cloud circles */
-  box-shadow: #CCCCCC 65px -15px 0 -5px,  #CCCCCC 25px -25px,  #CCCCCC 30px 10px,  #CCCCCC 60px 15px 0 -10px,  #CCCCCC 85px 5px 0 -5px;
+  box-shadow: #CCCCCC 65px -15px 0 -5px, #CCCCCC 25px -25px, #CCCCCC 30px 10px, #CCCCCC 60px 15px 0 -10px, #CCCCCC 85px 5px 0 -5px;
   height: 50px;
   width: 50px;
   /* Position to be changed*/
@@ -327,7 +358,7 @@ footer a:nth-child(4):after {
   animation: stormy 5s ease-in-out infinite;
   background: #222222;
   border-radius: 50%;
-  box-shadow: #222222 65px -15px 0 -5px,  #222222 25px -25px,  #222222 30px 10px,  #222222 60px 15px 0 -10px,  #222222 85px 5px 0 -5px;
+  box-shadow: #222222 65px -15px 0 -5px, #222222 25px -25px, #222222 30px 10px, #222222 60px 15px 0 -10px, #222222 85px 5px 0 -5px;
   height: 50px;
   width: 50px;
   position: absolute;
@@ -421,8 +452,9 @@ footer {
   footer a {
     color: #eff1f3;
     padding: 4%;
-    font-size: 1.5em;
-    position: relative; }
+    font-size: 2em;
+    position: relative;
+    font-family: "Pathway Gothic One", sans-serif; }
   footer a:hover {
     color: #fed766; }
 

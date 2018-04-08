@@ -1,27 +1,62 @@
 /* Third Block - Requirements*/
-.sidebar {
+aside {
+  background: $color-3;
+  border-top: 5px solid $color-3;
+  display: block;
+  float: left;
+  margin: 0 0 1em 0;
+  margin-bottom: -5px;
+  width: 100%;
+}
+.sidebar, .wrapper{
     background: $color-3;
-    clear: both;
+    border-top: 5px solid $color-3;
+    display: block;
     margin: 0 0 1em 0;
-    padding: 100px 0 0 1em;
+    width: 100%;
     a:hover {
 	color: $color-1;
+    }
+    .design-selection {
+        background: $color-3;
+        float: left;
+        padding: 100px 0 0 0;
+        width: 50%;
+        @media (max-width:$media-width)  {
+            float: none;
+            width: 100%;
+        }
+    }
+    .design-archives {
+        background: $color-3;
+        float: right;
+        padding: 100px 0 0 0;
+        width: 50%;
+        @media (max-width:$media-width)  {
+            float: none;
+            width: 100%;
+        }
+    }
+    .zen-resources {
+        background: $color-3;
+        float: right;
+        width: 50%;
+        @media (max-width:$media-width)  {
+            float: none;
+            width: 100%;
+        }
     }
   ul {
     list-style-type: none;
     text-align: center;
-	display:flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
     li {
       color: $color-5;
 		font-size: 1.3em;
+        padding: 10px;
+        margin-bottom: 12px;
       text-align: left;
-	  width: 150px;
       a {
         color: $color-5;
-        display: block;
-        width: $width-full;
 		text-decoration: none;
       }
     }
